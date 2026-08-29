@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>あるが幼稚園</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========================
+    PCヘッダー
+    ======================== -->
+    <header id="menu_wrap">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/about-icon.png" alt="" />
+              <p>当園について</p>
+              <span class="en">about</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/diary-icon.png" alt="" />
+              <p>園での生活</p>
+              <span class="en">life</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/calendar-icon.png" alt="" />
+              <p>年間行事</p>
+              <span class="en">event</span>
+            </a>
+          </li>
+
+          <li class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="あるが幼稚園" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/admission-icon.png" alt="" />
+              <p>入園案内</p>
+              <span class="en">admission</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/recruit-icon.png" alt="" />
+              <p>採用案内</p>
+              <span class="en">recruit</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/question-icon.png" alt="" />
+              <p>よくある質問</p>
+              <span class="en">question</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================
+    スマホメニュー
+    ======================== -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="mask"></div>
+
+    <nav id="spMenu">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/about-icon.png" alt="" />
+            <span>当園について</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="img/diary-icon.png" alt="" />
+            <span>園での生活</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="img/calendar-icon.png" alt="" />
+            <span>年間行事</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="img/admission-icon.png" alt="" />
+            <span>入園案内</span>
+          /a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="img/recruit-icon.png" alt="" />
+            <span>採用案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="img/question-icon.png" alt="" />
+            <span>よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- ========================
+      メインビジュアル
+      ======================== -->
+      <section class="mainvisual">
+        <ul class="slideshow">
+          <li class="active">
+            <img src="img/top1.jpg" alt="" />
+          </li>
+
+          <li>
+            <img src="img/top2.jpg" alt="" />
+          </li>
+
+          <li>
+            <img src="img/top3.jpg" alt="" />
+          </li>
+
+          <li>
+            <img src="img/top4.jpg" alt="" />
+          </li>
+
+          <li>
+            <img src="img/top5.jpg" alt="" />
+          </li>
+        </ul>
+
+        <p class="main-text">
+          子どもたちの<br />
+          笑顔がいっぱい！
+        </p>
+      </section>
+
+      <!-- ========================
+      NEWS
+      ======================== -->
+      <section id="news" class="container">
+        <div class="news-heading">
+          <img src="img/BOY-icon.png" alt="news icon" class="news-icon" />
+          <h2 class="sec-title">
+            新着情報<br />
+            <span class="en">news</span>
+          </h2>
+
+          <img src="img/GIRL-icon.png" alt="news icon" class="news-icon" />
+        </div>
+
+        <div class="news-tabs">
+          <ul class="tab-list">
+            <li class="tab-item tab-item1 active" tabindex="0">お知らせ</li>
+            <li class="tab-item tab-item2" tabindex="0">在園児お知らせ</li>
+            <li class="tab-item tab-item3" tabindex="0">入園案内</li>
+            <li class="tab-item tab-item4" tabindex="0">採用案内</li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-panel active tab1">
+              <h3>お知らせ</h3>
+              <p>ここはタブ1の内容が入ります</p>
+
+              <h3>お知らせ</h3>
+              <p>ここはタブ1の内容が入ります</p>
+            </div>
+
+            <div class="tab-panel tab2">
+              <h3>在園児お知らせ</h3>
+              <p>ここはタブ2の内容が入ります</p>
+            </div>
+
+            <div class="tab-panel tab3">
+              <h3>入園案内</h3>
+              <p>ここはタブ3の内容が入ります</p>
+            </div>
+
+            <div class="tab-panel tab4">
+              <h3>採用案内</h3>
+              <p>ここはタブ4の内容が入ります</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================
+      ABOUT US
+      ======================== -->
+      <section id="about" class="container">
+        <h2 class="sec-title about-title">
+          <span class="about-title-text">
+            子どもたち先生保護者の皆様<br />
+            みんなが主役の幼稚園です！
+          </span>
+
+          <span class="en">about us!</span>
+        </h2>
+
+        <ul class="list">
+          <li>
+            <a href="#">
+              <img src="img/main1.jpg" alt="" />
+              <p class="name">当園について</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/main2.jpg" alt="" />
+              <p class="name">園での生活</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/main3.jpg" alt="" />
+              <p class="name">年間行事</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/main4.jpg" alt="" />
+              <p class="name">入園案内</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/main5.jpg" alt="" />
+              <p class="name">採用案内</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/main6.jpg" alt="" />
+              <p class="name">よくある質問</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ========================
+      CONTACT
+      ======================== -->
+      <section class="contact container">
+        <h2 class="sec-title">
+          お問い合わせ
+          <span class="en">contact</span>
+        </h2>
+
+        <ul class="info">
+          <li>
+            ご質問や入園に関する問い合わせ・ご相談など、<br />
+            随時受け付けております。<br />
+            気になる点はお気軽にお問い合わせください。
+          </li>
+
+          <li class="tel">
+            お電話でのお問い合わせ<br />
+            TEL：0123-456-789<br />
+            受付時間：月〜金 8:00~17:00
+          </li>
+
+          <li>
+            <button type="button" class="form">お問い合わせフォームへ →</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- ========================
+    FOOTER
+    ======================== -->
+    <footer>
+      <section class="box-content">
+        <div class="left">
+          <h4 class="footer-logo">
+            <a href="#">
+              <img src="img/logo.PNG" alt="あるが幼稚園" />
+            </a>
+          </h4>
+
+          <p class="footer-tel">
+            〒123−4567<br />
+            埼玉県さいたま市１２号３４<br />
+            TEL：0123-456-789
+          </p>
+
+          <button type="button" class="map">GoogleMap →</button>
+        </div>
+
+        <div class="right">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="#">当園について▶︎</a>
+              </li>
+
+              <li>
+                <a href="#">園での生活▶︎</a>
+              </li>
+
+              <li>
+                <a href="#">年間行事▶︎</a>
+              </li>
+
+              <li>
+                <a href="#">入園案内▶︎</a>
+              </li>
+
+              <li>
+                <a href="#">採用案内▶︎</a>
+              </li>
+
+              <li>
+                <a href="#">よくある質問▶︎</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+
+<ul class="floating-btns">
+  <li>
+    <a class="to-contact" href="contact.html">
+      <img src="img/mail-icon.png" alt="" />
+      <span>お問い合わせ</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="to-access" href="#">
+      <img src="img/access-icon.png" alt="" />
+      <span>アクセス</span>
+    </a>
+  </li>
+</ul>
+
+<!-- ページトップへ戻る -->
+<button type="button" id="page-top" aria-label="ページ上部へ戻る">
+  <span class="arrow"></span>
+</button>
+
+
+
+  </body>
+</html>
