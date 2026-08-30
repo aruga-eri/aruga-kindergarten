@@ -146,3 +146,31 @@ if (pageTop) {
     });
   });
 }
+
+/* ==================================================
+   4つの保育方針 スクロールアニメーション
+================================================== */
+
+const policyItems = document.querySelectorAll(".slide-left, .slide-right");
+
+if (policyItems.length > 0) {
+  const policyObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-show");
+
+          // 一度表示したら監視終了
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.25,
+    },
+  );
+
+  policyItems.forEach((item) => {
+    policyObserver.observe(item);
+  });
+}

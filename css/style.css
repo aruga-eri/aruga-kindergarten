@@ -14,23 +14,23 @@ html {
 
 html,
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 body {
-  font-family: "Kosugi Maru", sans-serif;
-  color: #555;
   background: #fff;
+  color: #555;
+  font-family: "Kosugi Maru", sans-serif;
   line-height: 1.8;
   overflow-x: hidden;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
@@ -62,20 +62,20 @@ button {
 .sec-title {
   position: relative;
   margin: 0;
-  text-align: center;
+  color: #555;
   font-size: 2.3rem;
   font-weight: bold;
-  color: #555;
   line-height: 1.8;
+  text-align: center;
 }
 
 .sec-title .en {
   display: block;
   margin-top: 5px;
+  color: #f39800;
   font-size: 1.2rem;
   font-weight: normal;
   letter-spacing: 0.15em;
-  color: #f39800;
 }
 
 /* ==================================================
@@ -111,14 +111,14 @@ button {
 }
 
 #menu_wrap nav ul {
-  width: 100%;
-  height: 100%;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 10px 0 0;
-  gap: 10px;
 }
 
 #menu_wrap nav li {
@@ -133,8 +133,8 @@ button {
 #menu_wrap nav li a {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 
@@ -145,8 +145,8 @@ button {
 #menu_wrap nav li img {
   width: 60px;
   height: 60px;
-  object-fit: contain;
   margin-bottom: 3px;
+  object-fit: contain;
 }
 
 #menu_wrap nav li.logo img {
@@ -156,15 +156,15 @@ button {
 
 #menu_wrap nav li p {
   margin: 0;
+  color: #555;
   font-size: 0.9rem;
   font-weight: bold;
-  color: #555;
 }
 
 #menu_wrap .en {
   display: block;
-  font-size: 0.75rem;
   color: #f39800;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
 }
 
@@ -186,8 +186,8 @@ button {
   position: relative;
   width: 100%;
   height: 720px;
-  overflow: hidden;
   margin-top: 0;
+  overflow: hidden;
 }
 
 .slideshow {
@@ -204,8 +204,8 @@ button {
 }
 
 .slideshow li.active {
-  opacity: 1;
   z-index: 1;
+  opacity: 1;
 }
 
 .slideshow img {
@@ -231,9 +231,9 @@ button {
 
 .main-text {
   position: absolute;
-  z-index: 5;
   left: 10%;
   bottom: 15%;
+  z-index: 5;
   margin: 0;
   color: #fff;
   font-size: 3rem;
@@ -252,9 +252,9 @@ button {
 
 .news-heading {
   display: flex;
+  gap: 35px;
   justify-content: center;
   align-items: center;
-  gap: 35px;
   margin-bottom: 50px;
 }
 
@@ -265,13 +265,13 @@ button {
 }
 
 .news-heading .news-icon:first-child {
-  animation: boySwing 2.5s ease-in-out infinite;
   transform-origin: bottom center;
+  animation: boySwing 2.5s ease-in-out infinite;
 }
 
 .news-heading .news-icon:last-child {
-  animation: girlSwing 2.5s ease-in-out infinite;
   transform-origin: bottom center;
+  animation: girlSwing 2.5s ease-in-out infinite;
 }
 
 @keyframes boySwing {
@@ -297,12 +297,12 @@ button {
 .tab-item {
   position: relative;
   padding: 15px 10px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
+  background: var(--tab-color);
   border: 3px solid transparent;
   border-radius: 18px 18px 0 0;
-  background: var(--tab-color);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -312,13 +312,13 @@ button {
 .tab-item4 { --tab-color: #d5e5be; }
 
 .tab-item.active {
+  z-index: 2;
   background: #fff;
-  color: #555;
   border-color: var(--tab-color);
   border-bottom-color: #fff;
-  transform: translateY(3px);
-  z-index: 2;
+  color: #555;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+  transform: translateY(3px);
 }
 
 .tab-item:not(.active):hover {
@@ -362,23 +362,23 @@ button {
 
 .about-title {
   position: relative;
-  min-height: 270px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 270px;
   margin-bottom: 70px;
 }
 
 .about-title::before {
   content: "";
   position: absolute;
+  top: 20px;
+  left: 3%;
+  z-index: 0;
   width: 220px;
   height: 220px;
-  left: 3%;
-  top: 20px;
-  background: url("../img/kikyu.png") no-repeat center / contain;
-  z-index: 0;
+  background: url("../img/aboutus-icon.png") no-repeat center / contain;
   animation: balloonFloat 3.5s ease-in-out infinite;
 }
 
@@ -411,16 +411,16 @@ button {
 #about .list a {
   position: relative;
   display: block;
-  overflow: hidden;
-  border-radius: 25px;
   background: #fff;
+  border-radius: 25px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 #about .list a:hover {
-  transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px);
 }
 
 #about .list img {
@@ -432,8 +432,8 @@ button {
 }
 
 #about .list a:hover img {
-  transform: scale(1.05);
   filter: brightness(0.9);
+  transform: scale(1.05);
 }
 
 #about .name {
@@ -443,11 +443,11 @@ button {
   width: 100%;
   margin: 0;
   padding: 18px 10px;
-  text-align: center;
+  background: rgba(70, 70, 70, 0.55);
   color: #fff;
   font-size: 1.3rem;
   font-weight: bold;
-  background: rgba(70, 70, 70, 0.55);
+  text-align: center;
   backdrop-filter: blur(2px);
 }
 
@@ -460,10 +460,10 @@ button {
   margin-top: 100px;
   margin-bottom: 120px;
   padding: 65px 80px;
-  text-align: center;
   background: #eaf8fb;
   border-top: 5px solid #a8d8c2;
   border-bottom: 5px solid #a8d8c2;
+  text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
@@ -484,8 +484,8 @@ button {
 
 .contact .info li {
   padding: 22px 15px;
-  text-align: center;
   line-height: 1.9;
+  text-align: center;
 }
 
 .contact .info li + li {
@@ -498,10 +498,10 @@ button {
 }
 
 .contact .form {
-  border: none;
   padding: 14px 35px;
-  border-radius: 999px;
   background: #58b9c7;
+  border: none;
+  border-radius: 999px;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
@@ -510,8 +510,8 @@ button {
 }
 
 .contact .form:hover {
-  transform: translateY(-3px);
   opacity: 0.85;
+  transform: translateY(-3px);
 }
 
 /* ==================================================
@@ -539,12 +539,12 @@ footer::before {
 }
 
 .box-content {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
 }
 
 .box-content .left {
@@ -565,17 +565,17 @@ footer::before {
 }
 
 .map {
-  border: none;
   padding: 12px 25px;
-  border-radius: 30px;
   background: #f39800;
+  border: none;
+  border-radius: 30px;
   color: #fff;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .map:hover {
-  transform: translateY(-3px);
   opacity: 0.8;
+  transform: translateY(-3px);
 }
 
 .box-content .right {
@@ -591,8 +591,8 @@ footer::before {
 .footer-nav a {
   display: block;
   padding: 10px 15px;
-  font-size: 0.95rem;
   border-bottom: 1px dashed #d5bfa2;
+  font-size: 0.95rem;
   transition: padding-left 0.3s ease, color 0.3s ease;
 }
 
@@ -626,30 +626,30 @@ footer::before {
 
 .floating-btns a {
   display: flex;
-  width: 95px;
-  height: 95px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
-  text-decoration: none;
   color: #555;
   font-size: 0.75rem;
   font-weight: bold;
+  text-decoration: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .floating-btns a:hover {
-  transform: scale(1.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transform: scale(1.08);
 }
 
 .floating-btns img {
   width: 65px;
   height: 65px;
-  object-fit: contain;
   margin-bottom: 2px;
+  object-fit: contain;
 }
 
 .floating-btns .to-contact {
@@ -664,9 +664,9 @@ footer::before {
 
 .floating-btns .to-contact span {
   display: block;
-  transform: translateY(-16px);
   margin-top: 0;
   line-height: 1;
+  transform: translateY(-16px);
 }
 
 .floating-btns .to-access {
@@ -687,13 +687,13 @@ footer::before {
   align-items: center;
   width: 55px;
   height: 55px;
+  background-color: #fcf1e2;
   border: none;
   border-radius: 50%;
-  background-color: #fcf1e2;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   opacity: 0;
   visibility: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
@@ -754,9 +754,9 @@ footer::before {
   }
 
   .about-title::before {
+    left: 0;
     width: 180px;
     height: 180px;
-    left: 0;
   }
 
   #about .list {
@@ -785,14 +785,14 @@ footer::before {
     right: 20px;
     z-index: 2000;
     display: flex;
-    width: 55px;
-    height: 55px;
     flex-direction: column;
+    gap: 6px;
     justify-content: center;
     align-items: center;
-    gap: 6px;
-    border-radius: 50%;
+    width: 55px;
+    height: 55px;
     background: #fcf1e2;
+    border-radius: 50%;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
     cursor: pointer;
   }
@@ -824,10 +824,10 @@ footer::before {
 
   .hamburger.active span:nth-child(2) {
     position: absolute;
-    opacity: 0;
     width: 0;
     height: 0;
     background: transparent;
+    opacity: 0;
   }
 
   .hamburger.active span:nth-child(3) {
@@ -863,8 +863,8 @@ footer::before {
     padding: 90px 30px 40px;
     background: #fff8e1;
     border-radius: 60px 0 0 60px;
-    transition: right 0.5s ease;
     overflow-y: auto;
+    transition: right 0.5s ease;
   }
 
   #spMenu.active {
@@ -880,11 +880,11 @@ footer::before {
   #spMenu li a {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 5px;
+    align-items: center;
     padding: 15px 5px;
-    border-radius: 20px;
     background: #fff;
+    border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   }
 
@@ -912,8 +912,8 @@ footer::before {
 
   /* NEWS */
   #news {
-    padding: 40px 0 80px;
     margin-top: 0;
+    padding: 40px 0 80px;
   }
 
   .news-heading {
@@ -946,8 +946,8 @@ footer::before {
 
   .tab-item {
     padding: 10px 5px;
-    font-size: 0.8rem;
     border-radius: 10px;
+    font-size: 0.8rem;
   }
 
   .tab-content {
@@ -974,10 +974,10 @@ footer::before {
   }
 
   .about-title::before {
+    top: 25px;
+    left: -5px;
     width: 100px;
     height: 100px;
-    left: -5px;
-    top: 25px;
   }
 
   #about .list {
@@ -1019,11 +1019,11 @@ footer::before {
   }
 
   .box-content {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
   }
 
   .box-content .left,
@@ -1043,8 +1043,8 @@ footer::before {
   }
 
   .footer-tel {
-    text-align: center;
     line-height: 2;
+    text-align: center;
   }
 
   .map {
@@ -1059,8 +1059,8 @@ footer::before {
   .footer-nav ul {
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 0;
+    width: 100%;
   }
 
   .footer-nav li {
@@ -1071,8 +1071,8 @@ footer::before {
     display: block;
     width: 100%;
     padding: 20px 10px;
-    text-align: center;
     border-bottom: 1px dashed #d5bfa2;
+    text-align: center;
   }
 
   .footer-nav a:hover {
@@ -1134,4 +1134,427 @@ footer::before {
   #about .list img {
     height: 220px;
   }
+}
+
+/* ==================================================
+   ABOUT PAGE HERO
+================================================== */
+
+.page-about {
+  padding: 90px 0 140px;
+}
+
+/* ページタイトル */
+.about-page-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 70px;
+  color: #555;
+  text-align: center;
+}
+
+.about-page-title__text {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.about-page-title__icon {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 25px);
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transform: translateY(-65%);
+}
+
+.about-page-title__en {
+  display: block;
+  margin-top: 1px;
+  color: #f39800;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+}
+
+/* 写真＋キャッチコピー */
+.about-hero {
+  position: relative;
+  max-width: 1050px;
+  min-height: 650px;
+  margin: 0 auto;
+}
+
+.about-hero__image {
+  width: 78%;
+  margin-left: auto;
+}
+
+.about-hero__image img {
+  display: block;
+  width: 100%;
+  height: 580px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* 左下にはみ出すカード */
+.about-hero__card {
+  position: absolute;
+  left: -10%;
+  bottom: -45px;
+  width: 45%;
+  padding: 30px 35px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.about-hero__card h2 {
+  position: relative;
+  margin: 0 0 18px;
+  color: #555;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.about-hero__card h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 3px dotted #f39800;
+}
+
+.about-hero__card h2::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 35px;
+  height: 25px;
+  border-top: 4px solid #f39800;
+  border-left: 4px solid #f39800;
+  transform: rotate(-20deg);
+}
+
+.about-hero__card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 2;
+  text-align: left;
+}
+
+/* ==================================================
+   ABOUT PAGE SP
+================================================== */
+
+@media screen and (max-width: 767px) {
+  .page-about {
+    padding: 70px 0 100px;
+  }
+
+  .about-page-title {
+    column-gap: 12px;
+    margin-bottom: 45px;
+  }
+
+  .about-page-title__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-page-title__text {
+    font-size: 1.8rem;
+  }
+
+  .about-page-title__en {
+    font-size: 1rem;
+  }
+
+  .about-hero {
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
+  .about-hero__image {
+    width: 92%;
+    margin-left: auto;
+  }
+
+  .about-hero__image img {
+    height: 380px;
+    border-radius: 18px;
+  }
+
+  .about-hero__card {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 90%;
+    margin: -45px auto 0 0;
+    padding: 30px 25px;
+    border-radius: 18px;
+  }
+
+  .about-hero__card h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-hero__card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ==================================================
+   POLICY
+================================================== */
+
+.policy-section {
+  padding: 90px 0;
+  background-color: #fcfce8;
+}
+
+.policy-section .sec-title {
+  margin-bottom: 60px;
+}
+
+.policy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.policy-item {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.policy-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.policy-img,
+.policy-body {
+  width: 50%;
+}
+
+.policy-img img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.policy-label {
+  width: 170px;
+  height: 58px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ★ここ！ラベル自体を中央へ */
+  margin: 0 auto 30px;
+
+  padding: 0;
+  border-radius: 999px;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+.label-green { background: #c0f0c0; }
+.label-pink  { background: #f9d0e8; }
+.label-purple{ background: #d6c6f8; }
+.label-blue  { background: #b5e8f7; }
+
+/* ==================================================
+   4つの保育方針 スクロールアニメーション
+================================================== */
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-left.is-show,
+.slide-right.is-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==================================================
+   OVERVIEW
+================================================== */
+
+.overview-section {
+  padding: 100px 0 70px;
+}
+
+.overview-section .sec-title,
+.staff-section .sec-title {
+  margin-bottom: 50px;
+}
+
+.overview-flex {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.overview-list {
+  width: 55%;
+  border-top: 1px solid #ddd;
+}
+
+.overview-list .row {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.overview-list dt {
+  width: 25%;
+  font-weight: bold;
+}
+
+.overview-list dd {
+  width: 75%;
+}
+
+.overview-map {
+  width: 45%;
+}
+
+.map-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 380px;
+  background: #eee;
+  border-radius: 20px;
+}
+
+/* ==================================================
+   STAFF
+================================================== */
+
+.staff-section {
+  padding: 50px 0 100px;
+}
+
+.staff-table {
+  width: 100%;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.staff-table th {
+  padding: 15px 5px;
+  background: #edf7b5;
+  border: 1px solid #fff;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.staff-table td {
+  padding: 15px 5px;
+  background: #fcfce8;
+  border: 1px solid #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* ==================================================
+   HOME BUTTON
+================================================== */
+
+.home-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home-btn {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 18px 12px 25px;
+  background: #fcf1e2;
+  border: 2px solid #f39800;
+  border-radius: 999px;
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* オレンジ背景が左から流れてくる */
+.home-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #f39800;
+  transform: translateX(-101%);
+  transition: transform 0.4s ease;
+}
+
+.home-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.home-btn__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  color: #f39800;
+  transition: transform 0.4s ease;
+}
+
+/* HOVER */
+.home-btn:hover {
+  color: #fff;
+  box-shadow: 0 8px 0 #d97f00, 0 12px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.home-btn:hover::before {
+  transform: translateX(0);
+}
+
+.home-btn:hover .home-btn__arrow {
+  transform: translateX(5px) rotate(360deg);
 }
