@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あるが幼稚園</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========================
+    PCヘッダー
+    ======================== -->
+    <header id="menu_wrap">
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">
+              <img src="img/about-icon.png" alt="当園についてアイコン" />
+              <p>当園について</p>
+              <span class="en">about</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="diary.html">
+              <img src="img/diary-icon.png" alt="園での生活アイコン" />
+              <p>園での生活</p>
+              <span class="en">life</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="event.html">
+              <img src="img/calendar-icon.png" alt="年間行事アイコン" />
+              <p>年間行事</p>
+              <span class="en">event</span>
+            </a>
+          </li>
+
+          <li class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="あるが幼稚園" />
+            </a>
+          </li>
+
+          <li>
+            <a href="admission.html">
+              <img src="img/admission-icon.png" alt="入園案内アイコン" />
+              <p>入園案内</p>
+              <span class="en">admission</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="recruit.html">
+              <img src="img/recruit-icon.png" alt="採用案内アイコン" />
+              <p>採用案内</p>
+              <span class="en">recruit</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="question.html">
+              <img src="img/question-icon.png" alt="よくある質問アイコン" />
+              <p>よくある質問</p>
+              <span class="en">question</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================
+    スマホメニュー
+    ======================== -->
+    <div class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="mask"></div>
+
+    <nav id="spMenu">
+      <ul>
+        <li>
+          <a href="about.html">
+            <img src="img/about-icon.png" alt="" />
+            <span>当園について</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="diary.html">
+            <img src="img/diary-icon.png" alt="" />
+            <span>園での生活</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="event.html">
+            <img src="img/calendar-icon.png" alt="" />
+            <span>年間行事</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="admission.html">
+            <img src="img/admission-icon.png" alt="" />
+            <span>入園案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="recruit.html">
+            <img src="img/recruit-icon.png" alt="" />
+            <span>採用案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="question.html">
+            <img src="img/question-icon.png" alt="" />
+            <span>よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- ==================================================
+         PAGE TITLE
+      ================================================== -->
+
+      <section class="event-page container">
+        <h1 class="event-page-title">
+          <img
+            src="img/calendar-icon.png"
+            alt=""
+            class="event-page-title__icon"
+          />
+
+          <span class="event-page-title__text">年間行事</span>
+
+          <span class="event-page-title__en">year event</span>
+        </h1>
+
+        <!-- ==================================================
+           EVENT CONTENT
+        ================================================== -->
+
+        <div class="event-layout">
+          <!-- ========================
+             左：流れる写真
+          ======================== -->
+
+          <div class="event-photo-area">
+            <div class="event-photo-window">
+              <div class="event-photo-track">
+                <img src="img/pic_event1.jpg" alt="園の年間行事の様子" />
+                <img src="img/pic_event2.jpg" alt="園の年間行事の様子" />
+                <img src="img/pic_event3.jpg" alt="園の年間行事の様子" />
+                <img src="img/pic_event4.jpg" alt="園の年間行事の様子" />
+                <img src="img/pic_event5.jpg" alt="園の年間行事の様子" />
+
+                <!-- 無限ループ用に同じ画像をもう一度 -->
+                <img src="img/pic_event1.jpg" alt="" aria-hidden="true" />
+                <img src="img/pic_event2.jpg" alt="" aria-hidden="true" />
+                <img src="img/pic_event3.jpg" alt="" aria-hidden="true" />
+                <img src="img/pic_event4.jpg" alt="" aria-hidden="true" />
+                <img src="img/pic_event5.jpg" alt="" aria-hidden="true" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================
+             右：年間行事
+          ======================== -->
+
+          <div class="event-calendar">
+            <!-- 4月 -->
+            <article class="event-month">
+              <img src="img/c4-icon.png" alt="4月" />
+              <p>
+                入園式<br />
+                親子遠足
+              </p>
+            </article>
+
+            <!-- 5月 -->
+            <article class="event-month">
+              <img src="img/c5-icon.png" alt="5月" />
+              <p>保育参観</p>
+            </article>
+
+            <!-- 6月 -->
+            <article class="event-month">
+              <img src="img/c6-icon.png" alt="6月" />
+              <p>プール開き</p>
+            </article>
+
+            <!-- 7月 -->
+            <article class="event-month">
+              <img src="img/c7-icon.png" alt="7月" />
+              <p>
+                七夕祭り<br />
+                お泊まり保育
+              </p>
+            </article>
+
+            <!-- 8月 -->
+            <article class="event-month">
+              <img src="img/c8-icon.png" alt="7月" />
+              <p>
+                夏休み<br />
+                夕涼み会
+              </p>
+            </article>
+
+            <!-- 9月 -->
+            <article class="event-month">
+              <img src="img/c9-icon.png" alt="9月" />
+              <p>保育参観</p>
+            </article>
+
+            <!-- 10月 -->
+            <article class="event-month">
+              <img src="img/c10-icon.png" alt="10月" />
+              <p>
+                運動会<br />
+                お芋掘り
+              </p>
+            </article>
+
+            <!-- 11月 -->
+            <article class="event-month">
+              <img src="img/c11-icon.png" alt="11月" />
+              <p>お遊戯会</p>
+            </article>
+
+            <!-- 12月 -->
+            <article class="event-month">
+              <img src="img/c12-icon.png" alt="12月" />
+              <p>クリスマス会</p>
+            </article>
+
+            <!-- 1月 -->
+            <article class="event-month">
+              <img src="img/c1-icon.png" alt="1月" />
+              <p>お餅つき</p>
+            </article>
+
+            <!-- 2月 -->
+            <article class="event-month">
+              <img src="img/c2-icon.png" alt="2月" />
+              <p>
+                作品展<br />
+                節分
+              </p>
+            </article>
+
+            <!-- 3月 -->
+            <article class="event-month">
+              <img src="img/c3-icon.png" alt="3月" />
+              <p>
+                お別れ遠足<br />
+                卒園式
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- ==================================================
+           毎月の行事
+        ================================================== -->
+
+        <div class="monthly-event">
+          <span class="monthly-event__label">毎月</span>
+
+          <p>誕生会・身体計測・避難訓練</p>
+        </div>
+
+        <!-- ==================================================
+           HOME BUTTON
+        ================================================== -->
+
+        <div class="home-back">
+          <a href="index.html" class="home-btn">
+            <span>HOME</span>
+            <span class="home-btn__arrow">▶︎</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================
+    FOOTER
+    ======================== -->
+    <footer>
+      <div class="box-content">
+        <div class="left">
+          <h3 class="footer-logo">
+            <a href="index.html">
+              <img src="img/logo.PNG" alt="あるが幼稚園" />
+            </a>
+          </h3>
+
+          <p class="footer-tel">
+            〒123−4567<br />
+            埼玉県さいたま市１２号３４<br />
+            TEL：0123-456-789
+          </p>
+
+          <button type="button" class="map">GoogleMap →</button>
+        </div>
+
+        <div class="right">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="about.html">当園について▶︎</a></li>
+              <li><a href="diary.html">園での生活▶︎</a></li>
+              <li><a href="event.html">年間行事▶︎</a></li>
+              <li><a href="admission.html">入園案内▶︎</a></li>
+              <li><a href="recruit.html">採用案内▶︎</a></li>
+              <li><a href="question.html">よくある質問▶︎</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 固定ボタン -->
+    <ul class="floating-btns">
+      <li>
+        <a class="to-contact" href="contact.html">
+          <img src="img/mail-icon.png" alt="" />
+          <span>お問い合わせ</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="to-access" href="#">
+          <img src="img/access-icon.png" alt="" />
+          <span>アクセス</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ページトップへ戻る -->
+    <button type="button" id="page-top" aria-label="ページ上部へ戻る">
+      <span class="arrow"></span>
+    </button>
+  </body>
+</html>

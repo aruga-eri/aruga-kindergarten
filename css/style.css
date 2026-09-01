@@ -1558,3 +1558,539 @@ footer::before {
 .home-btn:hover .home-btn__arrow {
   transform: translateX(5px) rotate(360deg);
 }
+
+
+/* ==================================================
+   EVENT PAGE
+================================================== */
+
+/* ------------------------------
+   ページ全体
+------------------------------ */
+
+.event-page {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+
+/* ==================================================
+   PAGE TITLE
+================================================== */
+
+.event-page-title {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 0 80px;
+
+  color: #555;
+  text-align: center;
+}
+
+
+/* 「年間行事」 */
+
+.event-page-title__text {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+
+/* 英語 */
+
+.event-page-title__en {
+  margin-top: 8px;
+
+  color: #f39800;
+
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+}
+
+
+/* お花アイコン */
+
+.event-page-title__icon {
+  position: absolute;
+
+  width: 85px;
+  height: 85px;
+
+  object-fit: contain;
+
+  left: calc(50% - 220px);
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+
+/* ==================================================
+   EVENT LAYOUT
+================================================== */
+
+.event-layout {
+  display: grid;
+
+  /* 左30% / 右70% */
+  grid-template-columns: 30% 70%;
+
+  align-items: start;
+
+  gap: 50px;
+}
+
+
+/* ==================================================
+   LEFT PHOTO
+================================================== */
+
+.event-photo-area {
+  position: relative;
+}
+
+
+/*
+  写真が見える窓
+*/
+
+.event-photo-window {
+  position: relative;
+
+  width: 100%;
+  height: 900px;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+}
+
+
+/*
+  上下を少しぼかす
+*/
+
+.event-photo-window::before,
+.event-photo-window::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  z-index: 10;
+
+  width: 100%;
+  height: 90px;
+
+  pointer-events: none;
+}
+
+
+.event-photo-window::before {
+  top: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
+.event-photo-window::after {
+  bottom: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
+/*
+  写真を流す部分
+*/
+
+.event-photo-track {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  animation: eventPhotoScroll 35s linear infinite;
+}
+
+
+/* 写真 */
+
+.event-photo-track img {
+  display: block;
+
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+
+/*
+  マウスを写真に乗せると停止
+
+  「こういう細かいUIもできます」
+  がポートフォリオで見せられる✨
+*/
+
+.event-photo-window:hover .event-photo-track {
+  animation-play-state: paused;
+}
+
+
+/* 無限スクロール */
+
+@keyframes eventPhotoScroll {
+  from {
+    transform: translateY(calc(-50% - 7.5px));
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+/* ==================================================
+   EVENT CALENDAR
+================================================== */
+
+.event-calendar {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 35px;
+  row-gap: 55px;
+}
+
+
+/* 1ヶ月 */
+
+.event-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 0;
+
+  margin: 0;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+
+/* 月イラスト */
+
+.event-month img {
+  display: block;
+
+  width: 155px;
+  height: auto;
+
+  object-fit: contain;
+
+  transition: transform 0.35s ease;
+}
+
+
+/* 行事名 */
+
+.event-month p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 1.15rem;
+  font-weight: bold;
+
+  line-height: 1.5;
+}
+
+
+/* ==================================================
+   月にちょっと遊びを入れる
+================================================== */
+
+.event-month:hover {
+  transform: translateY(-7px);
+}
+
+
+.event-month:hover img {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+
+/* ==================================================
+   MONTHLY EVENT
+================================================== */
+
+.monthly-event {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 80px;
+
+  color: #555;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+.monthly-event p {
+  margin: 0;
+}
+
+
+/* 「毎月」 */
+
+.monthly-event__label {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 20px;
+
+  border-radius: 999px;
+
+  background: #fcf1e2;
+
+  color: #f39800;
+
+  font-size: 1rem;
+}
+
+
+/* ==================================================
+   HOME
+================================================== */
+
+.event-page .home-back {
+  margin-top: 70px;
+
+  text-align: center;
+}
+
+/* ==================================================
+   EVENT PAGE - SP
+================================================== */
+
+@media screen and (max-width: 767px) {
+  .event-page {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  /* ------------------------------
+     TITLE
+  ------------------------------ */
+
+  .event-page-title {
+    margin-bottom: 45px;
+  }
+
+  .event-page-title__text {
+    font-size: 2rem;
+  }
+
+  .event-page-title__en {
+    margin-top: 5px;
+    font-size: 0.8rem;
+  }
+
+  .event-page-title__icon {
+    width: 55px;
+    height: 55px;
+    left: calc(50% - 145px);
+  }
+
+  /* ------------------------------
+     全体レイアウト
+  ------------------------------ */
+
+  .event-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  /* ==================================================
+     SP PHOTO CAROUSEL
+  ================================================== */
+
+  .event-photo-area {
+    width: 100%;
+  }
+
+  .event-photo-window {
+    width: 100%;
+    height: 150px;
+
+    overflow: hidden;
+
+    border-radius: 0;
+  }
+
+  /* PCの上下グラデーションはOFF */
+  .event-photo-window::before,
+  .event-photo-window::after {
+    display: none;
+  }
+
+  .event-photo-track {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    /* PCの縦スクロール停止 */
+    animation: none;
+  }
+
+  /* PC無限スクロール用コピーはSPでは非表示 */
+  .event-photo-track img[aria-hidden="true"] {
+    display: none;
+  }
+
+  /* すべての写真 */
+  .event-photo-track img:not([aria-hidden="true"]) {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 30%;
+    height: 95px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    opacity: 0;
+
+    transform: translate(-50%, -50%) scale(0.8);
+
+    transition:
+      transform 0.6s ease,
+      opacity 0.6s ease;
+  }
+
+  /* 左の写真 */
+  .event-photo-track img.is-prev {
+    opacity: 0.55;
+
+    transform:
+      translate(-155%, -50%)
+      scale(0.85);
+
+    z-index: 1;
+  }
+
+  /* 真ん中 */
+  .event-photo-track img.is-active {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(1.12);
+
+    z-index: 3;
+
+    box-shadow:
+      0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* 右の写真 */
+  .event-photo-track img.is-next {
+    opacity: 0.55;
+
+    transform:
+      translate(55%, -50%)
+      scale(0.85);
+
+    z-index: 1;
+  }
+
+  /* ==================================================
+     CALENDAR
+  ================================================== */
+
+  .event-calendar {
+    width: 100%;
+
+    /* ★ 4列 × 3段 */
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 4px;
+    row-gap: 22px;
+
+  }
+
+  .event-month {
+    min-width: 0;
+    text-align: center;
+  }
+
+  /* PCより小さく */
+  .event-month img {
+    width: 72px;
+    height: 62px;
+
+    object-fit: contain;
+  }
+
+  .event-month p {
+    margin: 3px 0 0;
+
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+
+  /* 毎月イベント */
+  .monthly-event {
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: 50px;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    background: #fffaf3;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+  }
+}

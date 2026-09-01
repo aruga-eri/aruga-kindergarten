@@ -174,3 +174,43 @@ if (policyItems.length > 0) {
     policyObserver.observe(item);
   });
 }
+
+/* ==================================================
+   EVENT PHOTO CAROUSEL - SP
+================================================== */
+
+const eventPhotoTrack = document.querySelector(".event-photo-track");
+
+if (eventPhotoTrack) {
+  const eventPhotos = eventPhotoTrack.querySelectorAll(
+    'img:not([aria-hidden="true"])',
+  );
+
+  let currentPhoto = 0;
+
+  const showEventPhotos = () => {
+    eventPhotos.forEach((photo) => {
+      photo.classList.remove("is-prev", "is-active", "is-next");
+    });
+
+    const total = eventPhotos.length;
+
+    const prevIndex = (currentPhoto - 1 + total) % total;
+    const nextIndex = (currentPhoto + 1) % total;
+
+    eventPhotos[prevIndex].classList.add("is-prev");
+    eventPhotos[currentPhoto].classList.add("is-active");
+    eventPhotos[nextIndex].classList.add("is-next");
+  };
+
+  showEventPhotos();
+
+  setInterval(() => {
+    /* SPのときだけ切り替える */
+    if (window.innerWidth <= 767) {
+      currentPhoto = (currentPhoto + 1) % eventPhotos.length;
+
+      showEventPhotos();
+    }
+  }, 2000);
+}
