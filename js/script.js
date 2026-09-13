@@ -240,3 +240,59 @@ if (husen && footer) {
     }
   });
 }
+
+/* ==================================================
+   CRAYON PAGE TRANSITION
+================================================== */
+
+const crayonTransition =
+  document.querySelector(".crayon-transition");
+
+document.querySelectorAll("a[href]").forEach((link) => {
+
+  link.addEventListener("click", (e) => {
+
+    const href = link.getAttribute("href");
+
+    if (
+      !href ||
+      href === "#" ||
+      href.startsWith("#") ||
+      href.startsWith("http") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:") ||
+      link.target === "_blank"
+    ) {
+      return;
+    }
+
+    if (!crayonTransition) {
+      return;
+    }
+
+    e.preventDefault();
+
+    crayonTransition.classList.add("is-active");
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 1150);
+
+  });
+
+});
+
+/* ==================================================
+   ブラウザの「戻る」で復帰した時
+   クレヨン遷移をリセット
+================================================== */
+
+window.addEventListener("pageshow", () => {
+
+  if (!crayonTransition) {
+    return;
+  }
+
+  crayonTransition.classList.remove("is-active");
+
+});
