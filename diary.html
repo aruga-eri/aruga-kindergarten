@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あるが幼稚園</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ========================
+    PCヘッダー
+    ======================== -->
+    <header id="menu_wrap">
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">
+              <img src="img/about-icon.png" alt="当園についてアイコン" />
+              <p>当園について</p>
+              <span class="en">about</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="diary.html">
+              <img src="img/diary-icon.png" alt="園での生活アイコン" />
+              <p>園での生活</p>
+              <span class="en">diary</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="event.html">
+              <img src="img/calendar-icon.png" alt="年間行事アイコン" />
+              <p>年間行事</p>
+              <span class="en">event</span>
+            </a>
+          </li>
+
+          <li class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="あるが幼稚園" />
+            </a>
+          </li>
+
+          <li>
+            <a href="admission.html">
+              <img src="img/admission-icon.png" alt="入園案内アイコン" />
+              <p>入園案内</p>
+              <span class="en">admission</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="recruit.html">
+              <img src="img/recruit-icon.png" alt="採用案内アイコン" />
+              <p>採用案内</p>
+              <span class="en">recruit</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="question.html">
+              <img src="img/question-icon.png" alt="よくある質問アイコン" />
+              <p>よくある質問</p>
+              <span class="en">question</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================
+    スマホメニュー
+    ======================== -->
+    <div class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="mask"></div>
+
+    <nav id="spMenu">
+      <ul>
+        <li>
+          <a href="about.html">
+            <img src="img/about-icon.png" alt="" />
+            <span>当園について</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="diary.html">
+            <img src="img/diary-icon.png" alt="" />
+            <span>園での生活</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="event.html">
+            <img src="img/calendar-icon.png" alt="" />
+            <span>年間行事</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="admission.html">
+            <img src="img/admission-icon.png" alt="" />
+            <span>入園案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="recruit.html">
+            <img src="img/recruit-icon.png" alt="" />
+            <span>採用案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="question.html">
+            <img src="img/question-icon.png" alt="" />
+            <span>よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- ==================================================
+         PAGE TITLE
+      ================================================== -->
+
+      <section class="diary-page container">
+        <h1 class="diary-page-title">
+          <img src="img/diary-icon.png" alt="" class="diary-page-title__icon" />
+
+          <span class="diary-page-title__text">園での生活</span>
+
+          <span class="diary-page-title__en">diary</span>
+        </h1>
+
+        <!-- ========================
+        1日の流れ
+        ======================== -->
+
+        <section class="diary-section container">
+          <ul class="diary-list">
+            <!-- 8:30 -->
+            <li class="diary-item left">
+              <div class="diary-card slide-left">
+                <div class="diary-card__image">
+                  <img src="img/pic_diary2.jpg" alt="登園の様子" />
+
+                  <img src="img/t8-icon.png" alt="" class="diary-card__clock" />
+                </div>
+
+                <div class="diary-card__body">
+                  <p class="diary-card__time">8:30</p>
+
+                  <h3>登園</h3>
+
+                  <p>
+                    元気いっぱいに登園します。<br />
+                    朝の支度をして、好きな遊びを楽しみます。
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- 10:00 -->
+            <li class="diary-item right">
+              <div class="diary-card slide-right">
+                <div class="diary-card__image">
+                  <img src="img/pic_diary3.jpg" alt="朝の活動の様子" />
+
+                  <img
+                    src="img/t10-icon.png"
+                    alt=""
+                    class="diary-card__clock"
+                  />
+                </div>
+
+                <div class="diary-card__body">
+                  <p class="diary-card__time">10:00</p>
+
+                  <h3>朝の活動</h3>
+
+                  <p>
+                    クラスみんなで集まって、歌や製作、
+                    運動などの活動を楽しみます。
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- 12:00 -->
+            <li class="diary-item left">
+              <div class="diary-card slide-left">
+                <div class="diary-card__image">
+                  <img src="img/pic_diary4.jpg" alt="昼食の様子" />
+
+                  <img
+                    src="img/t12-icon.png"
+                    alt=""
+                    class="diary-card__clock"
+                  />
+                </div>
+
+                <div class="diary-card__body">
+                  <p class="diary-card__time">12:00</p>
+
+                  <h3>お昼ごはん</h3>
+
+                  <p>
+                    お友だちや先生と一緒に、 楽しくお昼ごはんをいただきます。
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- 13:00 -->
+            <li class="diary-item right">
+              <div class="diary-card slide-right">
+                <div class="diary-card__image">
+                  <img src="img/pic_diary5.jpg" alt="自由遊びの様子" />
+
+                  <img src="img/t1-icon.png" alt="" class="diary-card__clock" />
+                </div>
+
+                <div class="diary-card__body">
+                  <p class="diary-card__time">13:00</p>
+
+                  <h3>自由遊び</h3>
+
+                  <p>園庭やお部屋で、 好きな遊びをのびのび楽しみます。</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- 14:00 -->
+            <li class="diary-item left">
+              <div class="diary-card slide-left">
+                <div class="diary-card__image">
+                  <img src="img/pic_diary6.jpg" alt="降園の様子" />
+
+                  <img src="img/t2-icon.png" alt="" class="diary-card__clock" />
+                </div>
+
+                <div class="diary-card__body">
+                  <p class="diary-card__time">14:00</p>
+
+                  <h3>降園</h3>
+
+                  <p>
+                    今日も楽しかったね！<br />
+                    また明日、元気に会いましょう。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ==================================================
+           HOME BUTTON
+        ================================================== -->
+
+        <div class="home-back">
+          <a href="index.html" class="home-btn">
+            <span>HOME</span>
+            <span class="home-btn__arrow">▶︎</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <img src="img/husen.png" alt="" id="floating-husen" />
+    <!-- ========================
+    FOOTER
+    ======================== -->
+    <footer>
+      <div class="box-content">
+        <div class="left">
+          <h3 class="footer-logo">
+            <a href="index.html">
+              <img src="img/logo.PNG" alt="あるが幼稚園" />
+            </a>
+          </h3>
+
+          <p class="footer-tel">
+            〒123−4567<br />
+            埼玉県さいたま市１２号３４<br />
+            TEL：0123-456-789
+          </p>
+
+          <button type="button" class="map">GoogleMap →</button>
+        </div>
+
+        <div class="right">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="about.html">当園について▶︎</a>
+              </li>
+
+              <li>
+                <a href="diary.html">園での生活▶︎</a>
+              </li>
+
+              <li>
+                <a href="event.html">年間行事▶︎</a>
+              </li>
+
+              <li>
+                <a href="admission.html">入園案内▶︎</a>
+              </li>
+
+              <li>
+                <a href="recruit.html">採用案内▶︎</a>
+              </li>
+
+              <li>
+                <a href="question.html">よくある質問▶︎</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 固定ボタン -->
+    <ul class="floating-btns">
+      <li>
+        <a class="to-contact" href="contact.html">
+          <img src="img/mail-icon.png" alt="" />
+          <span>お問い合わせ</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="to-access" href="#">
+          <img src="img/access-icon.png" alt="" />
+          <span>アクセス</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ページトップへ戻る -->
+    <button type="button" id="page-top" aria-label="ページ上部へ戻る">
+      <span class="arrow"></span>
+    </button>
+  </body>
+</html>

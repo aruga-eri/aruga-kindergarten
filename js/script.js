@@ -214,3 +214,29 @@ if (eventPhotoTrack) {
     }
   }, 2000);
 }
+
+/* ==================================================
+   FLOATING HUSEN
+   フッター手前で停止
+================================================== */
+
+const husen = document.querySelector("#floating-husen");
+const footer = document.querySelector("footer");
+
+if (husen && footer) {
+  window.addEventListener("scroll", () => {
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    const husenHeight = husen.offsetHeight;
+    const bottomSpace = 30;
+
+    if (footerTop < windowHeight - bottomSpace) {
+      const overlap =
+        windowHeight - footerTop + bottomSpace;
+
+      husen.style.bottom = `${overlap}px`;
+    } else {
+      husen.style.bottom = `${bottomSpace}px`;
+    }
+  });
+}
