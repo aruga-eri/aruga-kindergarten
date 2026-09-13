@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あるが幼稚園 - 入園案内</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========================
+    PCヘッダー
+    ======================== -->
+    <header id="menu_wrap">
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">
+              <img src="img/about-icon.png" alt="当園についてアイコン" />
+              <p>当園について</p>
+              <span class="en">about</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="diary.html">
+              <img src="img/diary-icon.png" alt="園での生活アイコン" />
+              <p>園での生活</p>
+              <span class="en">diary</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="event.html">
+              <img src="img/calendar-icon.png" alt="年間行事アイコン" />
+              <p>年間行事</p>
+              <span class="en">calendar</span>
+            </a>
+          </li>
+
+          <li class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="学校法人あるが学園 のびのび幼稚園" />
+            </a>
+          </li>
+
+          <li>
+            <a href="admission.html">
+              <img src="img/admission-icon.png" alt="入園案内アイコン" />
+              <p>入園案内</p>
+              <span class="en">admission</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="recruit.html">
+              <img src="img/recruit-icon.png" alt="採用案内アイコン" />
+              <p>採用案内</p>
+              <span class="en">recruit</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="question.html">
+              <img src="img/question-icon.png" alt="よくある質問アイコン" />
+              <p>よくある質問</p>
+              <span class="en">question</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================
+    スマホメニュー
+    ======================== -->
+    <div class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="mask"></div>
+
+    <nav id="spMenu">
+      <ul>
+        <li>
+          <a href="about.html">
+            <img src="img/about-icon.png" alt="" />
+            <span>当園について</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="diary.html">
+            <img src="img/diary-icon.png" alt="" />
+            <span>園での生活</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="event.html">
+            <img src="img/calendar-icon.png" alt="" />
+            <span>年間行事</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="admission.html">
+            <img src="img/admission-icon.png" alt="" />
+            <span>入園案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="recruit.html">
+            <img src="img/recruit-icon.png" alt="" />
+            <span>採用案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="question.html">
+            <img src="img/question-icon.png" alt="" />
+            <span>よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ========================
+    MAIN
+    ======================== -->
+    <main class="admission-page">
+      <!-- PAGE TITLE -->
+      <section class="admission-title">
+        <div class="admission-title__inner">
+          <img
+            src="img/admission-icon.png"
+            alt=""
+            class="admission-title__icon"
+          />
+          <div class="admission-title__text">
+            <h1>入園案内</h1>
+            <span class="en">admission</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE NAV -->
+      <nav class="admission-nav">
+        <a href="#admission-schedule" class="admission-nav__btn btn-pink">
+          <span>▼</span> 入園案内
+        </a>
+
+        <a href="#mid-admission" class="admission-nav__btn btn-green">
+          <span>▼</span> 途中入園
+        </a>
+      </nav>
+
+      <!-- 入園案内コンテンツ -->
+      <section class="admission-section container">
+        <!-- 幼稚園説明会 -->
+        <div class="admission-block">
+          <div class="admission-heading">
+            <h2>
+              <img src="img/line4.png" alt="" class="heading-wave" />
+              <span>幼稚園説明会</span>
+              <img src="img/line4.png" alt="" class="heading-wave" />
+            </h2>
+          </div>
+
+          <table class="admission-table">
+            <tbody>
+              <tr>
+                <th>日程</th>
+                <td>9月5日（土）、9月26日（土）、10月14日（水）</td>
+              </tr>
+              <tr>
+                <th>10：00〜</th>
+                <td>受付</td>
+              </tr>
+              <tr>
+                <th>10：15</th>
+                <td>説明会</td>
+              </tr>
+              <tr>
+                <th>11：00</th>
+                <td>
+                  園庭遊び<br />
+                  <span class="note">※10/14(水)のみ保育見学</span>
+                </td>
+              </tr>
+              <tr>
+                <th>12：00</th>
+                <td>
+                  降園<br />
+                  <span class="note"
+                    >※9/5(土)、9/26(土)は休園日ですので保育の見学はありません。ご了承ください。</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 募集日程 -->
+        <div id="admission-schedule" class="admission-block">
+          <div class="admission-heading">
+            <h2>
+              <img src="img/line1.png" alt="" class="heading-wave" />
+              <span>募集に関する日程</span>
+              <img src="img/line1.png" alt="" class="heading-wave" />
+            </h2>
+          </div>
+
+          <table class="admission-table">
+            <tbody>
+              <tr>
+                <th>10月15日〜</th>
+                <td>入園願書配布（15日が土日の場合は翌月曜日）</td>
+              </tr>
+              <tr>
+                <th>11月 1日</th>
+                <td>願書受付</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 募集要項 -->
+        <div class="admission-block">
+          <div class="admission-heading">
+            <h2>
+              <img src="img/line2.png" alt="" class="heading-wave" />
+              <span>令和７年度募集要項</span>
+              <img src="img/line2.png" alt="" class="heading-wave" />
+            </h2>
+          </div>
+
+          <table class="admission-table">
+            <tbody>
+              <tr>
+                <th>3年保育児</th>
+                <td>60名（令和3年4月2日〜令和4年4月1日生）</td>
+              </tr>
+              <tr>
+                <th>2年保育児</th>
+                <td>若干名（令和2年4月2日〜令和3年4月1日生）</td>
+              </tr>
+              <tr>
+                <th>満３歳児</th>
+                <td>
+                  20名程度（3歳の誕生日の前日から入園できます。<br />
+                  受付は誕生日の2ヵ月前からになります。）
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 途中入園 -->
+      <section id="mid-admission" class="mid-admission container">
+        <div class="admission-heading">
+          <h2>
+            <img src="img/line3.png" alt="" class="heading-wave" />
+            <span>途中入園について</span>
+            <img src="img/line3.png" alt="" class="heading-wave" />
+          </h2>
+        </div>
+
+        <div class="mid-admission__box">
+          <p>
+            転勤・転居などの理由により途中入園を希望される方は、電話にてその旨をお申し出ください。
+          </p>
+        </div>
+      </section>
+
+      <!-- HOME BUTTON -->
+      <div class="home-back">
+        <a href="index.html" class="home-btn">
+          <span>HOME</span>
+          <span class="home-btn__arrow">►</span>
+        </a>
+      </div>
+    </main>
+
+    <!-- ========================
+    FOOTER
+    ======================== -->
+    <footer>
+      <div class="box-content">
+        <div class="left">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="学校法人あるが学園 のびのび幼稚園" />
+            </a>
+          </div>
+
+          <p class="footer-tel">
+            〒123-4567<br />
+            埼玉県さいたま市１２号３４<br />
+            TEL:0123-456-789
+          </p>
+
+          <button type="button" class="map">GoogleMap →</button>
+        </div>
+
+        <div class="right">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="about.html">当園について►</a></li>
+              <li><a href="diary.html">園での生活►</a></li>
+              <li><a href="event.html">年間行事►</a></li>
+              <li><a href="admission.html">入園案内►</a></li>
+              <li><a href="recruit.html">採用案内►</a></li>
+              <li><a href="question.html">よくある質問►</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p class="copyright">© NobiNobi Yochien all rights reserved.</p>
+    </footer>
+
+    <!-- 固定ボタン -->
+    <ul class="floating-btns">
+      <li>
+        <a class="to-contact" href="contact.html">
+          <img src="img/mail-icon.png" alt="" />
+          <span>お問い合わせ</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="to-access" href="#">
+          <img src="img/access-icon.png" alt="" />
+          <span>アクセス</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ページトップへ戻る -->
+    <button type="button" id="page-top" aria-label="ページ上部へ戻る">
+      <span class="arrow"></span>
+    </button>
+  </body>
+</html>

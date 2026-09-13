@@ -78,6 +78,8 @@ button {
   letter-spacing: 0.15em;
 }
 
+
+
 /* ==================================================
    PC HEADER
 ================================================== */
@@ -2092,5 +2094,256 @@ footer::before {
     font-size: 0.9rem;
 
     text-align: center;
+  }
+}
+/* ==========================================
+   Admission Main Content (.admission-page)
+   ========================================== */
+.admission-page {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.admission-title {
+  margin: 0 0 10px;
+  color: #555;
+  text-align: center;
+}
+
+.admission-title__inner {
+  position: relative;
+  display: inline-block;
+}
+
+/* 入園案内 */
+.admission-title__text h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* admission */
+.admission-title__text .en {
+  margin-top: 8px;
+  color: #f39800;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+}
+
+/* バスアイコン */
+.admission-title__icon {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 25px);
+
+  width: 90px;
+  height: 90px;
+
+  object-fit: contain;
+  transform: translateY(-65%);
+}
+
+
+/* ==========================================
+   ページ内ナビボタン（アニメーション＋カラー変化）
+   ========================================== */
+.admission-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.admission-nav__btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  overflow: hidden;
+  
+  /* ぷっくり立体感を生む影 */
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.08), 0 10px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.3s ease, 
+              background 0.2s ease, 
+              color 0.2s ease;
+}
+
+/* 矢印（▼）アイコン */
+.admission-nav__btn span {
+  font-size: 10px;
+  margin-right: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* --- ホバー時: ぽよんと浮き上がる --- */
+.admission-nav__btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08), 0 15px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admission-nav__btn:hover span {
+  transform: translateY(3px); /* 矢印が下に動く */
+}
+
+/* --- カラー＆クリック時（:active）の設定 --- */
+
+/* ピンクボタン */
+.btn-pink {
+  background: linear-gradient(135deg, #ffe6ed 0%, #ffc1d5 100%);
+  color: #5a3d46;
+  border: 2px solid #ffffff;
+}
+
+.btn-pink:active {
+  background: #ff8dae;
+  color: #ffffff;
+  transform: translateY(3px) scale(0.96);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* グリーンボタン */
+.btn-green {
+  background: linear-gradient(135deg, #e8f8e8 0%, #b8ebd0 100%);
+  color: #2e4d3a;
+  border: 2px solid #ffffff;
+}
+
+.btn-green:active {
+  background: #81c784;
+  color: #ffffff;
+  transform: translateY(3px) scale(0.96);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   見出し＆波線画像（line1〜line4）
+   ========================================== */
+.admission-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.admission-heading h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* 波線画像の共通基本サイズ */
+.heading-wave {
+  width: auto;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* 表（テーブル）デザイン */
+.admission-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  border-collapse: collapse;
+}
+
+.admission-table th,
+.admission-table td {
+  border: 1px solid #333;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+.admission-table th {
+  width: 30%;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.admission-table td {
+  width: 70%;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+/* テーブル内の注記（※〜）のテキスト指定 */
+.admission-table td .note {
+  font-size: 13px;
+  color: #555;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* 途中入園テキストエリア */
+.mid-admission__box {
+  text-align: center;
+  margin: 30px 0 60px;
+  font-size: 15px;
+}
+
+/* HOMEに戻るボタン */
+.home-back {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ==========================================
+   レスポンシブ対応（スマホ表示時）
+   ========================================== */
+@media (max-width: 768px) {
+  .admission-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .admission-nav__btn {
+    width: 80%;
+  }
+
+  .admission-heading h2 {
+    font-size: 18px;
+    gap: 8px;
+  }
+
+  .heading-wave {
+    height: 22px;
+  }
+
+  .heading-wave--line4 {
+    height: 18px;
+  }
+
+  .admission-table th,
+  .admission-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .admission-table th {
+    border-bottom: none;
+    background-color: #f9f9f9;
   }
 }
