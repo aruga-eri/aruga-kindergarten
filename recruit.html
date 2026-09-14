@@ -295,28 +295,30 @@
               <div class="contact-form__row">
                 <div class="contact-form__label">
                   <span class="required">必須</span>
-                  <label>ご用向き</label>
+                  <label>ご用件</label>
                 </div>
 
                 <div class="contact-form__input contact-form__radio">
                   <label>
-                    <input type="radio" name="type" value="園見学" required />
+                    <input type="radio" name="type" value="園見学" />
                     園見学
                   </label>
+
                   <label>
                     <input
                       type="radio"
                       name="type"
                       value="採用のお問い合わせ"
-                      checked
                     />
                     採用のお問い合わせ
                   </label>
+
                   <label>
                     <input
                       type="radio"
                       name="type"
                       value="園へのお問い合わせ・ご意見"
+                      checked
                     />
                     園へのお問い合わせ・ご意見
                   </label>
@@ -330,7 +332,14 @@
                   <label for="name">お名前</label>
                 </div>
                 <div class="contact-form__input">
-                  <input type="text" id="name" name="name" required />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    oninvalid="this.setCustomValidity('こちらをご記入ください')"
+                    oninput="this.setCustomValidity('')"
+                  />
                 </div>
               </div>
 
@@ -341,7 +350,14 @@
                   <label for="kana">ふりがな</label>
                 </div>
                 <div class="contact-form__input">
-                  <input type="text" id="kana" name="kana" required />
+                  <input
+                    type="text"
+                    id="kana"
+                    name="kana"
+                    required
+                    oninvalid="this.setCustomValidity('こちらをご記入ください')"
+                    oninput="this.setCustomValidity('')"
+                  />
                 </div>
               </div>
 
@@ -363,7 +379,14 @@
                   <label for="email">メールアドレス</label>
                 </div>
                 <div class="contact-form__input contact-form__input--short">
-                  <input type="email" id="email" name="email" required />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    oninvalid="this.setCustomValidity('こちらをご記入ください')"
+                    oninput="this.setCustomValidity('')"
+                  />
                 </div>
               </div>
 
@@ -374,7 +397,13 @@
                   <label for="message">お問い合わせ内容</label>
                 </div>
                 <div class="contact-form__input">
-                  <textarea id="message" name="message" required></textarea>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    oninvalid="this.setCustomValidity('こちらをご記入ください')"
+                    oninput="this.setCustomValidity('')"
+                  ></textarea>
                 </div>
               </div>
 
