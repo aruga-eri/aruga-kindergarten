@@ -1406,56 +1406,97 @@ footer::before {
 }
 
 /* ==================================================
-   OVERVIEW
+   OVERVIEW (園の概要)
 ================================================== */
 
 .overview-section {
-  padding: 100px 0 70px;
+  max-width: 1000px;
+  margin: 0 auto 120px;
 }
 
-.overview-section .sec-title,
-.staff-section .sec-title {
-  margin-bottom: 50px;
-}
-
+/* PC：２列レイアウト（または縦並び調整） */
 .overview-flex {
   display: flex;
-  gap: 50px;
-  align-items: flex-start;
+  gap: 40px;
+  align-items: stretch;
 }
 
 .overview-list {
-  width: 55%;
-  border-top: 1px solid #ddd;
+  flex: 1;
+  margin: 0;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .overview-list .row {
   display: flex;
-  padding: 14px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px dashed #e8e0d5;
+}
+
+.overview-list .row:last-child {
+  border-bottom: none;
 }
 
 .overview-list dt {
-  width: 25%;
+  width: 120px;
+  padding: 18px 20px;
+  background: #fff8eb;
+  color: #555;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 .overview-list dd {
-  width: 75%;
+  flex: 1;
+  margin: 0;
+  padding: 18px 20px;
+  color: #555;
+  line-height: 1.7;
+  box-sizing: border-box;
 }
 
+/* Google Mapエリア */
 .overview-map {
-  width: 45%;
+  flex: 1;
+  min-height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.map-placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.overview-map iframe {
   width: 100%;
-  height: 380px;
-  background: #eee;
-  border-radius: 20px;
+  height: 100%;
+  min-height: 400px;
+}
+
+/* SPレイアウト (スマホは縦並び) */
+@media screen and (max-width: 767px) {
+  .overview-flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .overview-list dt {
+    width: 100px;
+    padding: 14px 15px;
+    font-size: 0.9rem;
+  }
+
+  .overview-list dd {
+    padding: 14px 15px;
+    font-size: 0.9rem;
+  }
+
+  .overview-map {
+    min-height: 300px;
+  }
+
+  .overview-map iframe {
+    min-height: 300px;
+  }
 }
 
 /* ==================================================
@@ -3883,6 +3924,370 @@ footer::before {
   /* HOME BACK */
   .recruit-page .home-back,
   .contact-page .home-back {
+    margin-top: 70px;
+  }
+}
+
+/* ==================================================
+   QUESTION PAGE
+================================================== */
+
+.question-page {
+  padding: 90px 0 120px;
+}
+
+/* ==================================================
+   PAGE TITLE
+================================================== */
+
+.question-page-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 70px;
+  color: #555;
+  text-align: center;
+}
+
+.question-page-title__text {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.question-page-title__en {
+  display: block;
+  margin-top: 1px;
+  color: #f39800;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+}
+
+.question-page-title__icon {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 25px);
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transform: translateY(-65%);
+}
+
+/* ==================================================
+   FAQ (アコーディオン外枠)
+================================================== */
+
+.faq {
+  max-width: 900px;
+  margin: 0 auto 120px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background: #fffaf0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* ==================================================
+   QUESTION (質問部分)
+================================================== */
+
+.faq-question {
+  position: relative;
+  display: grid;
+  grid-template-columns: 55px 1fr 40px;
+  align-items: center;
+  width: 100%;
+  padding: 22px 25px;
+  background: #fff4d6; /* たまご色 */
+  border: none;
+  color: #555;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.faq-question:hover {
+  background: #ffedbd;
+}
+
+/* Qアイコン（オレンジの丸） */
+.faq-question__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #ffb76b;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.faq-question__text {
+  padding-right: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+/* ＋ / − アイコン */
+.faq-question__icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  justify-self: end;
+}
+
+.faq-question__icon::before,
+.faq-question__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background: #777;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 縦線（＋を作る） */
+.faq-question__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* 開いている時（aria-expanded="true"）は縦線を消して「−」にする */
+.faq-question[aria-expanded="true"] .faq-question__icon::after {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* ==================================================
+   ANSWER (回答部分)
+================================================== */
+
+.faq-answer {
+  display: flex;
+  gap: 17px;
+  padding: 22px 25px 28px;
+  background: #f0f8e8; /* ほんのりミントグリーン */
+  color: #555;
+}
+
+.faq-answer[hidden] {
+  display: none;
+}
+
+/* Aアイコン（グリーン丸） */
+.faq-answer__mark {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #8fc9a3;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.faq-answer p {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+/* ==================================================
+   CONTACT / HOME BACK
+================================================== */
+
+.question-contact {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.question-contact__title {
+  margin: 0 0 25px;
+  color: #555;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.question-contact__title span {
+  display: block;
+  margin-top: 2px;
+  color: #f39800;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+.question-contact__text {
+  margin: 0 0 30px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.question-contact__tel {
+  margin-bottom: 30px;
+  padding: 25px 20px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.question-contact__tel p {
+  margin: 0 0 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.question-contact__tel p:last-child {
+  margin-bottom: 0;
+}
+
+.question-contact__tel a {
+  display: block;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.question-contact__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-width: 280px;
+  padding: 16px 28px;
+  background: #fff1c8;
+  border-radius: 999px;
+  color: #555;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 0 #e9d29b;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-contact__link:hover {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #e9d29b;
+}
+
+.question-contact__link span {
+  transition: transform 0.25s ease;
+}
+
+.question-contact__link:hover span {
+  transform: translateX(5px);
+}
+
+.question-page .home-back {
+  margin-top: 100px;
+}
+
+/* ==================================================
+   SP (MAX-WIDTH: 767px)
+================================================== */
+
+@media screen and (max-width: 767px) {
+  .question-page {
+    padding: 70px 0 90px;
+  }
+
+  .question-page-title {
+    margin-bottom: 50px;
+  }
+
+  .question-page-title__text {
+    font-size: 1.8rem;
+  }
+
+  .question-page-title__en {
+    font-size: 1rem;
+  }
+
+  .question-page-title__icon {
+    right: calc(100% + 15px);
+    width: 60px;
+    height: 60px;
+  }
+
+  /* FAQ SP */
+  .faq {
+    width: calc(100% - 30px);
+    margin-bottom: 80px;
+  }
+
+  .faq-item {
+    margin-bottom: 15px;
+    border-radius: 16px;
+  }
+
+  .faq-question {
+    grid-template-columns: 42px 1fr 30px;
+    padding: 18px 15px;
+  }
+
+  .faq-question__mark {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .faq-question__text {
+    padding-right: 10px;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    gap: 12px;
+    padding: 18px 15px 22px;
+  }
+
+  .faq-answer__mark {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  /* CONTACT SP */
+  .question-contact {
+    width: calc(100% - 40px);
+  }
+
+  .question-contact__title {
+    font-size: 1.7rem;
+  }
+
+  .question-contact__text {
+    font-size: 0.88rem;
+  }
+
+  .question-contact__link {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .question-page .home-back {
     margin-top: 70px;
   }
 }

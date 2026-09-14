@@ -242,9 +242,13 @@
       園の概要
       ======================== -->
       <section id="access" class="overview-section container">
-        <h2 class="sec-title">園の概要</h2>
+        <h2 class="sec-title">
+          園の概要
+          <span class="en">overview</span>
+        </h2>
 
         <div class="overview-flex">
+          <!-- 左側：情報テーブル -->
           <dl class="overview-list">
             <div class="row">
               <dt>名称</dt>
@@ -281,8 +285,17 @@
             </div>
           </dl>
 
+          <!-- 右側（または下部）：Google Map -->
           <div class="overview-map">
-            <div class="map-placeholder">google map</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239653.80795955585!2d139.48411495229175!3d35.91546719172281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c1205c87e7af%3A0x8c74f2c0bfa2f65e!2z5Z-8546J55yM44GV44GE44Gf44G-5biC!5e1!3m2!1sja!2sjp!4v1789360484137!5m2!1sja!2sjp"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
         </div>
       </section>

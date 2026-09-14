@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あるが幼稚園 - よくある質問</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========================
+    PCヘッダー
+    ======================== -->
+    <header id="menu_wrap">
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">
+              <img src="img/about-icon.png" alt="当園についてアイコン" />
+              <p>当園について</p>
+              <span class="en">about</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="diary.html">
+              <img src="img/diary-icon.png" alt="園での生活アイコン" />
+              <p>園での生活</p>
+              <span class="en">diary</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="event.html">
+              <img src="img/calendar-icon.png" alt="年間行事アイコン" />
+              <p>年間行事</p>
+              <span class="en">event</span>
+            </a>
+          </li>
+
+          <li class="logo">
+            <a href="index.html">
+              <img src="img/logo.PNG" alt="あるが幼稚園" />
+            </a>
+          </li>
+
+          <li>
+            <a href="admission.html">
+              <img src="img/admission-icon.png" alt="入園案内アイコン" />
+              <p>入園案内</p>
+              <span class="en">admission</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="recruit.html">
+              <img src="img/recruit-icon.png" alt="採用案内アイコン" />
+              <p>採用案内</p>
+              <span class="en">recruit</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="question.html">
+              <img src="img/question-icon.png" alt="よくある質問アイコン" />
+              <p>よくある質問</p>
+              <span class="en">question</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================
+    スマホメニュー
+    ======================== -->
+    <div class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="mask"></div>
+
+    <nav id="spMenu">
+      <ul>
+        <li>
+          <a href="about.html">
+            <img src="img/about-icon.png" alt="" />
+            <span>当園について</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="diary.html">
+            <img src="img/diary-icon.png" alt="" />
+            <span>園での生活</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="event.html">
+            <img src="img/calendar-icon.png" alt="" />
+            <span>年間行事</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="admission.html">
+            <img src="img/admission-icon.png" alt="" />
+            <span>入園案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="recruit.html">
+            <img src="img/recruit-icon.png" alt="" />
+            <span>採用案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="question.html">
+            <img src="img/question-icon.png" alt="" />
+            <span>よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ==================================================
+        MAIN
+    ================================================== -->
+    <main>
+      <section class="question-page container">
+        <!-- PAGE TITLE -->
+        <h1 class="question-page-title">
+          <img
+            src="img/question-icon.png"
+            alt=""
+            class="question-page-title__icon"
+          />
+          <span class="question-page-title__text">よくある質問</span>
+          <span class="question-page-title__en">question</span>
+        </h1>
+
+        <!-- FAQ LIST -->
+        <section class="faq">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+            >
+              <span class="faq-question__mark">Q</span>
+              <span class="faq-question__text">
+                入園までの流れを教えてください。
+              </span>
+              <span class="faq-question__icon"></span>
+            </button>
+
+            <div class="faq-answer" id="faq-answer-1" hidden>
+              <span class="faq-answer__mark">A</span>
+              <p>
+                一度、見学に来ていただいて入園の申込書を
+                記入していただきます。<br />
+                11月1日願書受付の日にご来園いただき、面接を行います。<br />
+                その日に入園金をお支払いいただき、
+                必要書類一式をお渡しします。<br />
+                これで手続きの方は完了となります。
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+            >
+              <span class="faq-question__mark">Q</span>
+              <span class="faq-question__text">
+                面接時の服装はフォーマルな格好がいいのでしょうか？
+              </span>
+              <span class="faq-question__icon"></span>
+            </button>
+
+            <div class="faq-answer" id="faq-answer-2" hidden>
+              <span class="faq-answer__mark">A</span>
+              <p>
+                特に決まりはございません。<br />
+                普段着でお越しください。
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+            >
+              <span class="faq-question__mark">Q</span>
+              <span class="faq-question__text">
+                役員というものはありますか？
+              </span>
+              <span class="faq-question__icon"></span>
+            </button>
+
+            <div class="faq-answer" id="faq-answer-3" hidden>
+              <span class="faq-answer__mark">A</span>
+              <p>
+                ありません。<br />
+                行事に関するお手伝いをお願いすることもあります。
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-4"
+            >
+              <span class="faq-question__mark">Q</span>
+              <span class="faq-question__text">給食はありますか？</span>
+              <span class="faq-question__icon"></span>
+            </button>
+
+            <div class="faq-answer" id="faq-answer-4" hidden>
+              <span class="faq-answer__mark">A</span>
+              <p>
+                はい。給食を実施しています。<br />
+                詳細については園までお問い合わせください。
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-5"
+            >
+              <span class="faq-question__mark">Q</span>
+              <span class="faq-question__text">園見学はできますか？</span>
+              <span class="faq-question__icon"></span>
+            </button>
+
+            <div class="faq-answer" id="faq-answer-5" hidden>
+              <span class="faq-answer__mark">A</span>
+              <p>
+                園見学を受け付けています。<br />
+                お電話またはお問い合わせフォームより
+                お気軽にお問い合わせください。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================
+             CONTACT (お問い合わせ)
+        ======================== -->
+        <section class="contact container">
+          <h2 class="sec-title">
+            お問い合わせ
+            <span class="en">contact</span>
+          </h2>
+
+          <ul class="info">
+            <li>
+              ご質問や入園に関する問い合わせ・ご相談など、<br />
+              随時受け付けております。<br />
+              気になる点はお気軽にお問い合わせください。
+            </li>
+
+            <li class="tel">
+              お電話でのお問い合わせ<br />
+              TEL：0123-456-789<br />
+              受付時間：月〜金 8:00~17:00
+            </li>
+
+            <li>
+              <a href="recruit.html#contact" class="form"
+                >お問い合わせフォームへ →</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- HOME BACK -->
+        <div class="home-back">
+          <a href="index.html" class="home-btn">
+            <span>HOME</span>
+            <span class="home-btn__arrow">▶︎</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================
+    FOOTER
+    ======================== -->
+    <footer>
+      <div class="box-content">
+        <div class="left">
+          <h3 class="footer-logo">
+            <a href="index.html">
+              <img src="img/logo.PNG" alt="あるが幼稚園" />
+            </a>
+          </h3>
+
+          <p class="footer-tel">
+            〒123-4567<br />
+            埼玉県さいたま市１２号３４<br />
+            TEL：0123-456-789
+          </p>
+
+          <button type="button" class="map">GoogleMap →</button>
+        </div>
+
+        <div class="right">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="about.html">当園について▶︎</a></li>
+              <li><a href="diary.html">園での生活▶︎</a></li>
+              <li><a href="event.html">年間行事▶︎</a></li>
+              <li><a href="admission.html">入園案内▶︎</a></li>
+              <li><a href="recruit.html">採用案内▶︎</a></li>
+              <li><a href="question.html">よくある質問▶︎</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 固定ボタン -->
+    <ul class="floating-btns">
+      <li>
+        <a class="to-contact" href="recruit.html#contact">
+          <img src="img/mail-icon.png" alt="" />
+          <span>お問い合わせ</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="to-access" href="about.html#access">
+          <img src="img/access-icon.png" alt="" />
+          <span>アクセス</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ページトップへ戻る -->
+    <button type="button" id="page-top" aria-label="ページ上部へ戻る">
+      <span class="arrow"></span>
+    </button>
+
+    <!-- クレヨンアニメーション演出用 -->
+    <div class="crayon-transition">
+      <div class="crayon-line line1"></div>
+      <div class="crayon-line line2"></div>
+      <div class="crayon-line line3"></div>
+      <div class="crayon-line line4"></div>
+      <div class="crayon-line line5"></div>
+      <div class="crayon-line line6"></div>
+
+      <img src="img/kureyon-icon.png" alt="" class="crayon-transition__icon" />
+    </div>
+  </body>
+</html>
