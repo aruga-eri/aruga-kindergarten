@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あるが幼稚園 - 採用案内</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========================
+    PCヘッダー
+    ======================== -->
+    <header id="menu_wrap">
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">
+              <img src="img/about-icon.png" alt="当園についてアイコン" />
+              <p>当園について</p>
+              <span class="en">about</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="diary.html">
+              <img src="img/diary-icon.png" alt="園での生活アイコン" />
+              <p>園での生活</p>
+              <span class="en">diary</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="event.html">
+              <img src="img/calendar-icon.png" alt="年間行事アイコン" />
+              <p>年間行事</p>
+              <span class="en">event</span>
+            </a>
+          </li>
+
+          <li class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="あるが幼稚園" />
+            </a>
+          </li>
+
+          <li>
+            <a href="admission.html">
+              <img src="img/admission-icon.png" alt="入園案内アイコン" />
+              <p>入園案内</p>
+              <span class="en">admission</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="recruit.html">
+              <img src="img/recruit-icon.png" alt="採用案内アイコン" />
+              <p>採用案内</p>
+              <span class="en">recruit</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="question.html">
+              <img src="img/question-icon.png" alt="よくある質問アイコン" />
+              <p>よくある質問</p>
+              <span class="en">question</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================
+    スマホメニュー
+    ======================== -->
+    <div class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="mask"></div>
+
+    <nav id="spMenu">
+      <ul>
+        <li>
+          <a href="about.html">
+            <img src="img/about-icon.png" alt="" />
+            <span>当園について</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="diary.html">
+            <img src="img/diary-icon.png" alt="" />
+            <span>園での生活</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="event.html">
+            <img src="img/calendar-icon.png" alt="" />
+            <span>年間行事</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="admission.html">
+            <img src="img/admission-icon.png" alt="" />
+            <span>入園案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="recruit.html">
+            <img src="img/recruit-icon.png" alt="" />
+            <span>採用案内</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="question.html">
+            <img src="img/question-icon.png" alt="" />
+            <span>よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ==================================================
+         MAIN
+    ================================================== -->
+    <main>
+      <section class="recruit-page">
+        <!-- PAGE TITLE -->
+        <h1 class="recruit-page-title">
+          <img
+            src="img/recruit-icon.png"
+            alt=""
+            class="recruit-page-title__icon"
+          />
+          <span class="recruit-page-title__text">採用案内</span>
+          <span class="recruit-page-title__en">recruit</span>
+        </h1>
+
+        <!-- PHOTO SLIDER -->
+        <section class="recruit-gallery">
+          <div class="slider-container">
+            <ul class="slider-list">
+              <!-- 1セット目 -->
+              <li class="slider-item slider-item--up">
+                <img src="img/pic_event4.jpg" alt="保育の様子" />
+              </li>
+              <li class="slider-item slider-item--down">
+                <img src="img/pic_diary6.jpg" alt="子どもたちと遊ぶ先生" />
+              </li>
+              <li class="slider-item slider-item--up-small">
+                <img src="img/main2.jpg" alt="園での活動の様子" />
+              </li>
+              <li class="slider-item slider-item--down">
+                <img src="img/pic_about1.jpg" alt="先生と子どもたち" />
+              </li>
+              <li class="slider-item slider-item--up">
+                <img src="img/main5.jpg" alt="幼稚園での様子" />
+              </li>
+
+              <!-- 無限ループ用 2セット目 -->
+              <li class="slider-item slider-item--up">
+                <img src="img/pic_event4.jpg" alt="保育の様子" />
+              </li>
+              <li class="slider-item slider-item--down">
+                <img src="img/pic_diary6.jpg" alt="子どもたちと遊ぶ先生" />
+              </li>
+              <li class="slider-item slider-item--up-small">
+                <img src="img/main2.jpg" alt="園での活動の様子" />
+              </li>
+              <li class="slider-item slider-item--down">
+                <img src="img/pic_about1.jpg" alt="先生と子どもたち" />
+              </li>
+              <li class="slider-item slider-item--up">
+                <img src="img/main5.jpg" alt="幼稚園での様子" />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- MESSAGE -->
+        <section class="recruit-message container">
+          <!-- 左：MESSAGE -->
+          <div class="recruit-message__body">
+            <span class="recruit-message__label">MESSAGE</span>
+            <h2>
+              子どもたちの笑顔が、<br />
+              私たちの元気の源です。
+            </h2>
+            <p>
+              毎日同じことの繰り返しではなく、
+              子どもたちと一緒にたくさん笑ったり、新しい発見をしたり。
+            </p>
+            <p>
+              職員同士で助け合いながら、一人ひとりが自分らしく働ける環境を
+              大切にしています。
+            </p>
+            <p>
+              子どもたちの成長を一緒に見守ってくださる方を お待ちしています。
+            </p>
+          </div>
+
+          <!-- 右：園舎写真 -->
+          <div class="recruit-message__image">
+            <img src="img/pic_ensya.png" alt="幼稚園の園舎" />
+          </div>
+        </section>
+
+        <!-- 募集要項 -->
+        <section class="recruit-info container">
+          <h2 class="sec-title">募集要項</h2>
+
+          <div class="recruit-info__table">
+            <dl>
+              <div class="recruit-info__row">
+                <dt>募集職種</dt>
+                <dd>幼稚園教諭</dd>
+              </div>
+              <div class="recruit-info__row">
+                <dt>雇用形態</dt>
+                <dd>正職員・パート</dd>
+              </div>
+              <div class="recruit-info__row">
+                <dt>応募資格</dt>
+                <dd>
+                  幼稚園教諭免許をお持ちの方<br />
+                  または取得見込みの方
+                </dd>
+              </div>
+              <div class="recruit-info__row">
+                <dt>勤務時間</dt>
+                <dd>園の規定による</dd>
+              </div>
+              <div class="recruit-info__row">
+                <dt>休日</dt>
+                <dd>土曜日・日曜日・祝日ほか</dd>
+              </div>
+              <div class="recruit-info__row">
+                <dt>勤務地</dt>
+                <dd>あるが幼稚園</dd>
+              </div>
+              <div class="recruit-info__row">
+                <dt>応募方法</dt>
+                <dd>
+                  お電話またはお問い合わせフォームより お問い合わせください。
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <!-- ENTRY (お問い合わせフォーム) -->
+        <section id="contact" class="contact-page container">
+          <div class="contact-box">
+            <!-- 電話 -->
+            <div class="contact-tel">
+              <div class="contact-tel__title">
+                <p>電話でのお問い合わせ</p>
+                <span>telephone</span>
+              </div>
+              <a href="tel:0123456789" class="contact-tel__number">
+                TEL 0123-456-789
+              </a>
+              <p class="contact-tel__time">受付時間：月〜金 8:00〜17:00</p>
+            </div>
+
+            <!-- FORM TITLE -->
+            <div class="contact-form-title">
+              <h2>フォームでのお問い合わせ</h2>
+              <span>mail form</span>
+            </div>
+
+            <!-- FORM -->
+            <form class="contact-form">
+              <!-- ご用向き -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <span class="required">必須</span>
+                  <label>ご用向き</label>
+                </div>
+
+                <div class="contact-form__input contact-form__radio">
+                  <label>
+                    <input type="radio" name="type" value="園見学" required />
+                    園見学
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="type"
+                      value="採用のお問い合わせ"
+                      checked
+                    />
+                    採用のお問い合わせ
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="type"
+                      value="園へのお問い合わせ・ご意見"
+                    />
+                    園へのお問い合わせ・ご意見
+                  </label>
+                </div>
+              </div>
+
+              <!-- 名前 -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <span class="required">必須</span>
+                  <label for="name">お名前</label>
+                </div>
+                <div class="contact-form__input">
+                  <input type="text" id="name" name="name" required />
+                </div>
+              </div>
+
+              <!-- ふりがな -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <span class="required">必須</span>
+                  <label for="kana">ふりがな</label>
+                </div>
+                <div class="contact-form__input">
+                  <input type="text" id="kana" name="kana" required />
+                </div>
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <span class="optional">任意</span>
+                  <label for="tel">電話番号</label>
+                </div>
+                <div class="contact-form__input contact-form__input--short">
+                  <input type="tel" id="tel" name="tel" />
+                </div>
+              </div>
+
+              <!-- メール -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <span class="required">必須</span>
+                  <label for="email">メールアドレス</label>
+                </div>
+                <div class="contact-form__input contact-form__input--short">
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <!-- お問い合わせ内容 -->
+              <div class="contact-form__row contact-form__row--textarea">
+                <div class="contact-form__label">
+                  <span class="required">必須</span>
+                  <label for="message">お問い合わせ内容</label>
+                </div>
+                <div class="contact-form__input">
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+              </div>
+
+              <!-- 注意事項 -->
+              <p class="contact-form__notice">
+                ※お問い合わせ内容の確認画面はありません。<br />
+                内容にお間違いがないかご確認の上、送信ボタンを押してください。
+              </p>
+
+              <!-- 送信ボタン -->
+              <div class="contact-form__submit">
+                <button type="submit">
+                  <span>送信する</span>
+                  <span class="send-icon">✈︎</span>
+                </button>
+              </div>
+
+              <!-- 送信後注意書き -->
+              <p class="contact-form__after">
+                ※送信完了後、受付完了の自動送信メールをお送りしております。<br />
+                その後、園担当者より2〜3営業日以内にメールでご連絡させていただきます。<br />
+                万が一ご連絡がない場合は、お手数ですが当園までご連絡ください。
+              </p>
+            </form>
+          </div>
+
+          <!-- HOME BACK BUTTON -->
+          <div class="home-back">
+            <a href="index.html" class="home-btn">
+              <span>HOME</span>
+              <span class="home-btn__arrow">▶︎</span>
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- ========================
+    FOOTER
+    ======================== -->
+    <footer>
+      <div class="box-content">
+        <div class="left">
+          <h3 class="footer-logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="あるが幼稚園" />
+            </a>
+          </h3>
+
+          <p class="footer-tel">
+            〒123-4567<br />
+            埼玉県さいたま市１２号３４<br />
+            TEL：0123-456-789
+          </p>
+
+          <button type="button" class="map">GoogleMap →</button>
+        </div>
+
+        <div class="right">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="about.html">当園について▶︎</a></li>
+              <li><a href="diary.html">園での生活▶︎</a></li>
+              <li><a href="event.html">年間行事▶︎</a></li>
+              <li><a href="admission.html">入園案内▶︎</a></li>
+              <li><a href="recruit.html">採用案内▶︎</a></li>
+              <li><a href="question.html">よくある質問▶︎</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 固定ボタン -->
+    <ul class="floating-btns">
+      <li>
+        <a class="to-contact" href="recruit.html#contact">
+          <img src="img/mail-icon.png" alt="" />
+          <span>お問い合わせ</span>
+        </a>
+      </li>
+
+      <li>
+        <!-- ★ hrefを修正 -->
+        <a class="to-access" href="about.html#access">
+          <img src="img/access-icon.png" alt="" />
+          <span>アクセス</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ページトップへ戻る -->
+    <button type="button" id="page-top" aria-label="ページ上部へ戻る">
+      <span class="arrow"></span>
+    </button>
+
+    <!-- クレヨンアニメーション演出用 -->
+    <div class="crayon-transition">
+      <div class="crayon-line line1"></div>
+      <div class="crayon-line line2"></div>
+      <div class="crayon-line line3"></div>
+      <div class="crayon-line line4"></div>
+      <div class="crayon-line line5"></div>
+      <div class="crayon-line line6"></div>
+
+      <img src="img/kureyon-icon.png" alt="" class="crayon-transition__icon" />
+    </div>
+  </body>
+</html>
